@@ -1,0 +1,28 @@
+{
+  "name": "fee-calculator",
+  "version": "1.0.0",
+  "description": "fare calculation system for Singa Metro Authority",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "build": "npm run lint && rimraf dist && tsc",
+    "start": "node ./dist/index.js"
+  },
+  "author": "zakiarsyad@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.10",
+    "@types/node": "^20.9.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
