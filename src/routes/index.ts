@@ -1,9 +1,9 @@
-import { Router } from 'express';
+import { Router } from "express";
 
-import { CalculationRouter } from './calculation';
+import { CalculationRouter } from "./calculation";
 
 const router = Router();
 
-router.use('/calculates', CalculationRouter);
+router.use("/calculates", CalculationRouter);
 
 export default router;

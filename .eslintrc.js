@@ -1,10 +1,10 @@
 module.exports = {
-    root: true,
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-    rules: {
-        // Additional rules or overrides can be added here
-    },
-    ignorePatterns: ['node_modules', 'dist', '.eslintrc.js'],
+  root: true,
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  rules: {
+    // Additional rules or overrides can be added here
+  },
+  ignorePatterns: ["node_modules", "dist", ".eslintrc.js"],
 };
