@@ -1,8 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
-    // TODO: Implement logger.
-
     if (err.message === 'INVALID_API_KEY') {
         return res.status(400).send({
             error_code: 'INVALID_API_KEY',

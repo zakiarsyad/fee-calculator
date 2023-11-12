@@ -1,12 +1,8 @@
-import dotenv from 'dotenv';
 import express from 'express';
 
-import { errorHandler } from './middlewares/error_handler';
-import { apiKeyValidator } from './middlewares/api_key_validator';
+import { apiKeyValidator, errorHandler } from './middlewares';
 import routes from './routes';
 import { HealthcheckRouter } from './routes/healthcheck';
-
-dotenv.config();
 
 const app = express();
 const port = 3000;
